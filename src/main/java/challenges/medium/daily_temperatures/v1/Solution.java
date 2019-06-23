@@ -1,16 +1,25 @@
-package solutions.daily_temperatures;
+package challenges.medium.daily_temperatures.v1;
+
+import tags.BigO;
+import tags.Container;
 
 import java.util.Stack;
 
+import static tags.BigO.Complexity.N;
+import static tags.Container.ContainerType.STACK;
+
 /**
  * @author <a href="https://github.com/ferenc4">Ferenc Fazekas</a>
+ * @implSpec <a href="https://leetcode.com/problems/daily-temperatures/">Specification</a>
  */
+@BigO(time = N)
+@Container(STACK)
 public class Solution {
     class Temperature {
         int index;
         short value;
 
-        public Temperature(int i, short val) {
+        Temperature(int i, short val) {
             index = i;
             value = val;
         }
