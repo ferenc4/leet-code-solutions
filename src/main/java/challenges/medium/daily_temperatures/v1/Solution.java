@@ -5,14 +5,14 @@ import tags.Container;
 
 import java.util.Stack;
 
-import static tags.BigO.Complexity.N;
+import static tags.BigO.ComplexityComponent.N;
 import static tags.Container.ContainerType.STACK;
 
 /**
  * @author <a href="https://github.com/ferenc4">Ferenc Fazekas</a>
  * @implSpec <a href="https://leetcode.com/problems/daily-temperatures/">Specification</a>
  */
-@BigO(time = N)
+@BigO(time = {N})
 @Container(STACK)
 public class Solution {
     class Temperature {
